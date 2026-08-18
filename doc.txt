@@ -5,3 +5,5 @@ git branch - показывает ветки
 git log - показываект историю commitov
 git reset - отминяет команды
 git pull - позвляет обновить репозиторий
+
+hello world
