@@ -1,3 +1,7 @@
 git add .
 git commit -m "123" 
 git push origin main
+git branch - показывает ветки
+git log - показываект историю commitov
+git reset - отминяет команды
+git pull - позвляет обновить репозиторий
