@@ -1,6 +1,1 @@
-hi
-<<<<<<< HEAD
-hi
-=======
 Wasya
->>>>>>> 02b785477f9c1cb52516bdfdabbb2c960e642c8a
