@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="parent">
+
+    <div class="good">
+        <p>Iphone</p>
+        <div>1000</div>
+        <button onclick="my(this)">Buy</button>
+    </div>
+
+    <div class="good">
+        <p>Samsung</p>
+        <div>800</div>
+        <button onclick="my(this)">Buy</button>
+    </div>
+
+    <div class="good">
+        <p>Google Pixel</p>
+        <div>600</div>
+        <button onclick="my(this)">Buy</button>
+    </div>
+
+</div>
+
+<div class="cart" style="display: none;">
+    <div class="sum">Total: 0</div>
+</div>
+
+<script>
+    let products = [
+        { name: "Iphone", price: 1000 },
+        { name: "Samsung", price: 800 },
+        { name: "Google Pixel", price: 600 }
+    ];
+
+    let total = 0;
+
+    function my(x) {
+        x.innerHTML = "in cart";
+
+        if (x.innerHTML === "in cart") {
+            x.disabled = true;
+        }
+
+        let price = parseInt(x.previousElementSibling.innerHTML);
+        let productName = x.previousElementSibling.previousElementSibling.innerHTML;
+
+        total += price;
+        document.querySelector('.sum').innerHTML = 'Total: ' + total;
+
+        document.querySelector('.cart').style.display = 'block';
+    }
+</script>
+</body>
+</html>
